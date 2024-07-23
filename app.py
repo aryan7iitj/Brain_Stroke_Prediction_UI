@@ -40,7 +40,7 @@ class StrokePredictionInput(BaseModel):
 
 # Define the prediction endpoint
 @app.post("/predict")
-def predict(input_data: StrokePredictionInput):
+async def predict(input_data: StrokePredictionInput):
     # Convert input data to DataFrame
     data = {
         "gender": [input_data.gender],
