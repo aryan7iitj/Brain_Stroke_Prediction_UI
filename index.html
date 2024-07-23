@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brain Stroke Prediction</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <h1>Brain Stroke Prediction</h1>
+            <form id="predictionForm">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="gender">Gender</label>
+                        <select id="gender" name="gender">
+                            <option value="Male">Male</option>
+                            <option value="Female">Female</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="age">Age</label>
+                        <input type="number" id="age" name="age" step="1" required>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="hypertension">Hypertension</label>
+                        <select id="hypertension" name="hypertension">
+                            <option value="0">No</option>
+                            <option value="1">Yes</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="heart_disease">Heart Disease</label>
+                        <select id="heart_disease" name="heart_disease">
+                            <option value="0">No</option>
+                            <option value="1">Yes</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="ever_married">Ever Married</label>
+                        <select id="ever_married" name="ever_married">
+                            <option value="No">No</option>
+                            <option value="Yes">Yes</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="work_type">Work Type</label>
+                        <select id="work_type" name="work_type">
+                            <option value="Govt_job">Government Job</option>
+                            <option value="children">Children</option>
+                            <option value="Private">Private</option>
+                            <option value="Self-employed">Self-employed</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="Residence_type">Residence Type</label>
+                        <select id="Residence_type" name="Residence_type">
+                            <option value="Urban">Urban</option>
+                            <option value="Rural">Rural</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="avg_glucose_level">Avg Glucose Level</label>
+                        <input type="number" id="avg_glucose_level" name="avg_glucose_level" step="0.1" required>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="bmi">BMI</label>
+                        <input type="number" id="bmi" name="bmi" step="0.1" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="smoking_status">Smoking Status</label>
+                        <select id="smoking_status" name="smoking_status">
+                            <option value="formerly smoked">Formerly Smoked</option>
+                            <option value="never smoked">Never Smoked</option>
+                            <option value="smokes">Smokes</option>
+                        </select>
+                    </div>
+                </div>
+                <button type="submit">Predict</button>
+            </form>
+            <div id="result"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
